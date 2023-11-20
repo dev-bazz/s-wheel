@@ -18,6 +18,37 @@
 	-o-border-radius: utility.px-to-rem(8px);
 }
 
+.form {
+	max-width: utility.px-to-rem(500px);
+	h3 {
+		font-size: utility.px-to-rem(28px);
+		font-weight: 700;
+		color: #10345e;
+	}
+
+	&_input {
+		display: grid;
+		gap: utility.px-to-rem(4px);
+
+		input {
+			padding: utility.px-to-rem(16px);
+			border: none;
+			background-color: #f3f5f6;
+			border-radius: utility.px-to-rem(4px);
+			-webkit-border-radius: utility.px-to-rem(4px);
+			-moz-border-radius: utility.px-to-rem(4px);
+			-ms-border-radius: utility.px-to-rem(4px);
+			-o-border-radius: utility.px-to-rem(4px);
+		}
+	}
+	&_inputs {
+		margin-top: utility.px-to-rem(32px);
+		display: flex;
+		flex-direction: column;
+		gap: utility.px-to-rem(16px);
+	}
+}
+
 .hero {
 	background-image: url(../../public/reward_bg.svg);
 	background-size: cover;
@@ -65,6 +96,7 @@
 	}
 	&_title {
 		font-size: utility.px-to-rem(40px);
+		color: #10345e;
 	}
 
 	&_text {
@@ -78,5 +110,51 @@
 	.bold {
 		color: #353f50;
 		font-weight: 700;
+	}
+
+	.lower {
+		margin-top: utility.px-to-rem(56px);
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.button {
+		max-width: none;
+		padding: 0;
+		padding-block: utility.px-to-rem(16px);
+		margin-top: utility.px-to-rem(32px);
+	}
+}
+
+.leadBoard {
+	background: #ebf6ff;
+	padding-block: utility.px-to-rem(84px);
+	padding-inline: utility.px-to-rem(16px);
+	&_container {
+		max-width: utility.px-to-rem(748px);
+		margin-inline: auto;
+	}
+
+	&_player {
+		background-color: white;
+		padding: utility.px-to-rem(28px) utility.px-to-rem(44px);
+		display: flex;
+		justify-content: space-between;
+		border-radius: utility.px-to-rem(12px);
+		-webkit-border-radius: utility.px-to-rem(12px);
+		-moz-border-radius: utility.px-to-rem(12px);
+		-ms-border-radius: utility.px-to-rem(12px);
+		-o-border-radius: utility.px-to-rem(12px);
+	}
+
+	h3 {
+		color: #10345e;
+		font-size: utility.px-to-rem(40px);
+		text-align: center;
+	}
+	&_leaders {
+		display: flex;
+		flex-direction: column;
+		margin-top: utility.px-to-rem(32px);
+		gap: utility.px-to-rem(10px);
 	}
 }
