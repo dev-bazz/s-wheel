@@ -33,6 +33,32 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			<section
+				className={style.spinner}
+				aria-labelledby="spinner"
+			>
+				<div className={style.container}>
+					<div className="">
+						<h2
+							className={style.spinner_title}
+							id="spinner"
+						>
+							Transact, Spin and Win!
+						</h2>
+						<p className={`${style.spinner_text} ${style.top}`}>
+							<span className={style.bold}>Quickteller</span> is
+							giving our wonderful football fans a chance to WIN BIG
+							every week by spinning the wheel with their reference
+							code in the Transact, Spin and WIN Promo.
+						</p>
+						<p className={style.spinner_text}>
+							A reference code is only valuable for 7 days and can
+							only be used once.
+						</p>
+					</div>
+				</div>
+			</section>
 		</>
 	);
 }

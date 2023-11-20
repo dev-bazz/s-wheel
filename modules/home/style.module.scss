@@ -22,12 +22,13 @@
 	background-image: url(../../public/reward_bg.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 75vh;
+	min-height: calc(75vh - utility.px-to-rem(20px));
 	background-color: #003247;
 	color: white;
 	display: grid;
 	place-items: center;
 	padding-inline: utility.px-to-rem(16px);
+	padding-block: utility.px-to-rem(20px);
 
 	.container {
 		@extend .container;
@@ -54,5 +55,28 @@
 
 	.button {
 		margin-top: utility.px-to-rem(32px);
+	}
+}
+
+.spinner {
+	padding-block: utility.px-to-rem(84px);
+	.container {
+		@extend .container;
+	}
+	&_title {
+		font-size: utility.px-to-rem(40px);
+	}
+
+	&_text {
+		font-size: utility.px-to-rem(20px);
+		line-height: utility.px-to-rem(32px);
+
+		&:is(.top) {
+			margin-top: utility.px-to-rem(20px);
+		}
+	}
+	.bold {
+		color: #353f50;
+		font-weight: 700;
 	}
 }
