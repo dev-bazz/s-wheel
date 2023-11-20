@@ -1,0 +1,10 @@
+@use "/styles/constants.module.scss";
+@use "/styles/utility.scss" as *;
+.container {
+	@extend .container;
+}
+
+.nav {
+	padding-block: px-to-rem(24px);
+	padding-inline: px-to-rem(16px);
+}

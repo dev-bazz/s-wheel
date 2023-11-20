@@ -1,7 +1,8 @@
+import style from "./style.module.scss";
 const NavBar = () => {
 	return (
-		<nav>
-			<div className="">
+		<nav className={style.nav}>
+			<div className={style.container}>
 				<span className="">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

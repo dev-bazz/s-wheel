@@ -1,0 +1,58 @@
+@use "/styles/utility.scss" as utility;
+@use "/styles/constants.module.scss" as *;
+
+.button {
+	all: unset;
+	color: white;
+	cursor: pointer;
+	max-width: utility.px-to-rem(335px);
+	width: 100%;
+	font-size: utility.px-to-rem(20px);
+	text-align: center;
+	padding: utility.px-to-rem(16px);
+	background-color: #0275d8;
+	border-radius: utility.px-to-rem(8px);
+	-webkit-border-radius: utility.px-to-rem(8px);
+	-moz-border-radius: utility.px-to-rem(8px);
+	-ms-border-radius: utility.px-to-rem(8px);
+	-o-border-radius: utility.px-to-rem(8px);
+}
+
+.hero {
+	background-image: url(../../public/reward_bg.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 75vh;
+	background-color: #003247;
+	color: white;
+	display: grid;
+	place-items: center;
+	padding-inline: utility.px-to-rem(16px);
+
+	.container {
+		@extend .container;
+		display: grid;
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(500px, auto)
+		);
+		justify-items: end;
+		align-items: center;
+		gap: utility.px-to-rem(2px);
+	}
+
+	&_title {
+		font-size: utility.px-to-rem(60px);
+		line-height: 1.1;
+	}
+	&_text {
+		font-size: utility.px-to-rem(24px);
+		font-weight: normal;
+		color: rgb(239, 239, 239);
+		margin-top: utility.px-to-rem(24px);
+	}
+
+	.button {
+		margin-top: utility.px-to-rem(32px);
+	}
+}
